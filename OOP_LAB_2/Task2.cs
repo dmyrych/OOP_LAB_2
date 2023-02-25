@@ -28,10 +28,10 @@ namespace OOP_LAB_2
                     Grade3 = int.Parse(stringParts[3]),
                 };
             });
-            // Filter students by average grade using lambda expression
+            // Sort students by average grade using lambda expression
             var sortedStudents = students.ToArray();
             Array.Sort(sortedStudents, (Student x, Student y) => x.AverageGrade().CompareTo(y.AverageGrade()));
-            // Output filtered student data
+            // Output sorted student data
             foreach (var student in sortedStudents)
             {
                 Console.WriteLine(student.Name + ": " + student.AverageGrade());
