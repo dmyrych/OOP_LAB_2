@@ -1,0 +1,3 @@
+Chernysh Dmytro,10,10,7
+Alexander Koloban,10,2,10
+Zigfried Rooter,10,10,10
