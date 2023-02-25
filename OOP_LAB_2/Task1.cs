@@ -10,7 +10,7 @@ namespace OOP_LAB_2
     {
         public void Run() {
             string filePath = @"C:\Users\Дмитрий\source\repos\OOP_LAB_2\OOP_LAB_2\Students.txt";
-            string[] lines = new string[3];
+            string[] lines = new string[9];
             StreamReader streamReader = new StreamReader(filePath);
             for (int i = 0; i < lines.Length; i++)
             {

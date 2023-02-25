@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP_LAB_2
 {
-    internal class Task2
+    internal class Task3
     {
         public void Run()
         {
@@ -26,17 +26,26 @@ namespace OOP_LAB_2
                     Grade1 = int.Parse(stringParts[1]),
                     Grade2 = int.Parse(stringParts[2]),
                     Grade3 = int.Parse(stringParts[3]),
+                    Group = int.Parse(stringParts[4]),
                 };
             });
-            // Sort students by average grade using lambda expression
-            var sortedStudents = students.ToArray();
-            Array.Sort(sortedStudents, (Student x, Student y) => x.AverageGrade().CompareTo(y.AverageGrade()));
-            // Output sorted student data
-            foreach (var student in sortedStudents)
+            Console.WriteLine("Writing all students: ");
+            foreach (var student in students)
             {
-                Console.WriteLine(student.Name + ": " + student.AverageGrade());
+                Console.WriteLine($"Name: {student.Name}, is part of a Group{student.Group}");
             }
-            Console.ReadKey();
+            Console.WriteLine("Grouping students by their group: ");
+            var studentsByGroup = students.GroupBy(s => s.Group)
+                                          .OrderBy(g => g.Key);
+            Console.WriteLine("Students by group: ");
+            foreach (var group in studentsByGroup)
+            {
+                Console.WriteLine("Група: {0}", group.Key);
+                foreach (var student in group)
+                {
+                    Console.WriteLine($"{student.Name} ");
+                }
+            }
         }
     }
 }

@@ -1,3 +1,9 @@
-Chernysh Dmytro,10,10,7
-Alexander Koloban,10,2,10
-Zigfried Rooter,10,10,10
+Chernysh Dmytro,10,10,7,2
+Alexander Koloban,10,2,10,2
+Zigfried Rooter,10,10,10,2
+Justin Bieber,1,1,5,3
+Ed Sheeran,7,7,5,1
+Julia Green,9,6,7,3
+Michael Martynenko,10,10,9,1
+Papa Roach,5,7,8,3
+John Doe,4,8,1,1
